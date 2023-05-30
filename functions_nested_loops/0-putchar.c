@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	char a[] = "Holberton";
+	char a[] = "_putchar/n";
 		int b;
 
 	for (b = 0; b < 9; b++)
