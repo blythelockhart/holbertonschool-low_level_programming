@@ -6,21 +6,16 @@
  *
  * Return: Always 0.
  */
-void print_rev(char *s)
+char *_strcpy(char *dest, char *src)
 {
-	int len = 0, index;
+	int count = 0;
 
-	while (s[index++])
+	while (count >= 0)
 	{
-		if (s[index] == '\0')
-		{
+		*(dest + count) = *(src + count);
+		if (*(src + count) == '\0')
 			break;
-		}
-		len++;
+		count++;
 	}
-	for (index = len - 1; index >= 0; index--)
-	{
-		_putchar(s[index]);
-	}
-	_putchar('\n');
+	return (dest);
 }
